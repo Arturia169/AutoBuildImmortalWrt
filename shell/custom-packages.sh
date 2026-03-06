@@ -70,12 +70,6 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky lucky"
 
 
 #===========================我手动添加的=====================================↓
-#5G/4G模块管理
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-modemband-zh-cn"
-
-#USB打印共享（修正了这里：主插件 + 语言包）
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-usb-printer luci-i18n-usb-printer-zh-cn"
-
 #网页终端、UPnP、Argon主题
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-ttyd-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-upnp-zh-cn"
@@ -86,17 +80,7 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES -dnsmasq"
 
 # 基础驱动
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES kmod-usb-net-rndis kmod-usb-net-cdc-ether kmod-usb-net-qmi-wwan kmod-usb-serial-option kmod-usb-serial-wwan usb-modeswitch"
-# 移远官方拨号工具
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES quectel-CM-5G"
 
-# 悟空大力常用的调制解调器管理插件
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-modem luci-i18n-modem-zh-cn"
-
-# 辅助工具（信号详情、短信等）
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES sms-tool luci-app-sms-tool luci-i18n-sms-tool-zh-cn"
-
-# 频段锁定工具
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-modemband luci-i18n-modemband-zh-cn"
 #===========================以下imm仓库内的软件==============================↓
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3cat-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3ginfo-lite-zh-cn"
