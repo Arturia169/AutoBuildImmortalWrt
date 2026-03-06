@@ -70,16 +70,19 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky lucky"
 
 
 #===========================我手动添加的=====================================↓
-# 启用 OpenClash (去掉之前的减号和注释)
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-openclash"
-# 5G/4G模块管理及USB打印共享
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-modemband-zh-cn luci-app-usb-printer-zh-cn"
-# 网页终端、UPnP、Argon主题及配置界面
+# 1. 5G/4G模块管理
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-modemband-zh-cn"
+
+# 2. USB打印共享（修正了这里：主插件 + 语言包）
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-usb-printer luci-i18n-usb-printer-zh-cn"
+
+# 3. 网页终端、UPnP、Argon主题
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-ttyd-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-upnp-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-theme-argon luci-i18n-argon-config-zh-cn"
 
-
+# 4. 彻底解决 dnsmasq 冲突（建议加上这行，防止下一个报错）
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES -dnsmasq"
 
 #===========================以下imm仓库内的软件==============================↓
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3cat-zh-cn"
